@@ -1,3 +1,181 @@
-/**
- TODO(you): Add CSS for the list that you create yourself!
-*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Italianno');
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans|Hammersmith+One|Pacifico|Tulpen+One|Lobster');
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #364043;
+}
+
+p {
+  font-family: "Italianno",fantasy;
+  font-size: 28px;
+  color: #BABABA;
+  text-align: center;
+}
+
+a {
+  margin-top: 0px;
+  text-align:center;
+  letter-spacing: 5px;
+  font: 38px "Hammersmith One", sans-serif;
+  color: #BABABA;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bg-1, .bg-2, .bg-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+.bg-1 {
+  background-image: url("../images/bg-1.jpg");
+  height: 100vh;
+}
+
+.bg-1 h1 {
+  color: white;
+  font-family: 'Pacifico', serif;
+  font-size: 80px;
+  font-weight: normal;
+  text-align: center;
+  padding: 0 40px 20px 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 5px solid white;
+}
+
+.bg-1 h2 {
+  color: white;
+  font-family: 'Expletus Sans', serif;
+  font-size: 38px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.bg-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)),url("../images/bg-2.jpg");
+  height: 400px;
+}
+
+.bg-2 span {
+  color: white;
+  font-family: 'Lobster', serif;
+  font-size: 38px;
+  font-weight: normal;
+  text-align: center;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.bg-3 {
+  background-image: url("../images/bg-3.jpg");
+  height: 500px;
+}
+
+.bg-3 span {
+  color: white;
+  font-family: 'Expletus Sans', serif;
+  font-size: 38px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.divid1 {
+  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .3)),url("../images/bg-3.jpg");
+  height: 90px;
+}
+
+.divid2 {
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)),url("../images/bg-3.jpg");
+  height: 50px;
+}
+.divid2 span {
+  font-size: 20px;
+  color: black;
+}
+
+.divid3 {
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)),url("../images/bg-3.jpg");
+  height: 30px;
+}
+.divid3 span {
+  font-size: 10px;
+  color: black;
+}
+
+.divid4 {
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)),url("../images/bg-2.jpg");
+  height: 100px;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  text-align:center;
+  padding: 50px 80px;
+  text-align: justify;
+  background-color:#282E34;
+}
+
+.intro {
+  margin: 0px auto;
+  width: 66.67%;
+}
+
+.intro h3 {
+  font: 28px "Hammersmith One", sans-serif;
+  color: #BABABA;
+  margin-top: 0;
+}
+
+.intro ul {
+  list-style: none;
+  margin: 0;
+}
+
+.intro ul li, a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font: 20px sans-serif;
+  color: #BABABA;
+}
+
+.intro .memo {
+  font: 15px sans-serif;
+  color: #9C9C9C;
+  margin-left: 220px;
+}
+
+.intro img {
+  height: 300px;
+  margin-top: 10px;
+}
+
+
+.intro strong {
+  margin-right: 20px;
+  display: inline-block;
+  width: 200px;
+}
