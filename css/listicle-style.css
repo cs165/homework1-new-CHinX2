@@ -61,7 +61,7 @@ header h1 {
 
 #content .inner {
   margin: 0px auto;
-  width: 66.67%;
+  width: calc(66.67% + 40px);
 }
 
 #content ul {
@@ -84,8 +84,10 @@ header h1 {
 #content .num {
   color: rgba(0, 0, 0, 0.25);
   display: inline-block;
-  margin-left: -64px; /* this value test from chrome by myself */
-  margin-right: 40px;
+  width: 40px;
+  margin-left: -80px;
+  padding-right: 40px;
+  text-align: right;
 }
 
 #content a {
