@@ -1,3 +1,110 @@
 /**
  TODO(you): Write the CSS necessary to complete HW1!
 */
+@charset "UTF-8";
+
+body {
+  margin: 0;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../images/header.jpg");
+  background-size: cover;
+  height: 500px;
+  position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  width: 780px;
+}
+
+#profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-color: rgb(51, 51, 51);
+  font-weight: normal;
+  text-align: center;
+  line-height: 24px;
+}
+
+#profile img {
+  border-radius: 100%;
+  border: solid 1px white;
+  background-color: white;
+  width: 100px;
+  margin: -50px 0 5px 0;
+}
+
+#profile .name {
+  font-weight: bold;
+}
+
+#profile .date {
+  font-style: italic;
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 10px;
+}
+
+#content .inner {
+  margin: 0px auto;
+  width: 66.67%;
+}
+
+#content ul {
+  list-style: none;
+  margin: 0;
+}
+
+#content li {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#content li div {
+  font-family: 'Roboto Slab', serif;
+  font-size: 36px;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+
+#content .num {
+  color: rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  margin-left: -64px; /* this value test from chrome by myself */
+  margin-right: 40px;
+}
+
+#content a {
+  color: #42b4d6;
+  text-decoration: none;
+}
+
+#content a:hover {
+  text-decoration: underline;
+}
+
+#content p {
+  color: rgb(51, 51, 51);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 20px 0 20px 0;
+}
+
+#content img {
+  width: 100%;
+}
